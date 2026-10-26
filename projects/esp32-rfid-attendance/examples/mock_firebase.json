@@ -1,0 +1,41 @@
+{
+  "mock_only": true,
+  "attendance_demo": {
+    "fac7fd35866f75f41b2ca43c": {
+      "uptime_ms": 0,
+      "decision": "granted",
+      "subject": "demo_user_01",
+      "relay_unlocked": true,
+      "simulated": true,
+      "session": "demo-session-01",
+      "record_type": "access_grant_not_confirmed_entry",
+      "server_received_at": {
+        ".sv": "timestamp"
+      }
+    },
+    "94d02aa2ccec10e7979e6fc5": {
+      "uptime_ms": 4000,
+      "decision": "granted",
+      "subject": "demo_user_02",
+      "relay_unlocked": true,
+      "simulated": true,
+      "session": "demo-session-01",
+      "record_type": "access_grant_not_confirmed_entry",
+      "server_received_at": {
+        ".sv": "timestamp"
+      }
+    },
+    "d1f15b1e6111825001f29bda": {
+      "uptime_ms": 7500,
+      "decision": "granted",
+      "subject": "demo_user_01",
+      "relay_unlocked": true,
+      "simulated": true,
+      "session": "demo-session-01",
+      "record_type": "access_grant_not_confirmed_entry",
+      "server_received_at": {
+        ".sv": "timestamp"
+      }
+    }
+  }
+}

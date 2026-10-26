@@ -1,0 +1,7 @@
+{"uptime_ms":0,"decision":"granted","subject":"demo_user_01","relay_unlocked":true,"simulated":true}
+{"uptime_ms":500,"decision":"duplicate","subject":"unknown","relay_unlocked":true,"simulated":true}
+{"uptime_ms":1000,"decision":"busy","subject":"unknown","relay_unlocked":true,"simulated":true}
+{"uptime_ms":3000,"decision":"denied","subject":"unknown","relay_unlocked":false,"simulated":true}
+{"uptime_ms":4000,"decision":"granted","subject":"demo_user_02","relay_unlocked":true,"simulated":true}
+{"uptime_ms":4500,"decision":"invalid","subject":"unknown","relay_unlocked":true,"simulated":true}
+{"uptime_ms":7500,"decision":"granted","subject":"demo_user_01","relay_unlocked":true,"simulated":true}
