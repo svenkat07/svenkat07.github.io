@@ -3,3 +3,64 @@
 
 /* Keep the chip face clear; pins live only along its outer edges. */
 .chip:before,.chip:after{background:repeating-linear-gradient(0deg,#c1c8b8 0 5px,transparent 5px 14px) left top/12px 100% no-repeat,repeating-linear-gradient(0deg,#c1c8b8 0 5px,transparent 5px 14px) right top/12px 100% no-repeat}
+
+
+/* Purple × Glacier portfolio refresh */
+:root{--ink:#100d20;--paper:#f1f5ff;--green:#a58cff;--muted:#b8b9d3;--line:#383455;--orange:#a9ecff}
+body{background:#100d20;color:#f1f5ff}
+::selection{background:#a58cff;color:#100d20}
+header{background:#100d20ed;border-color:#403859}
+.brand b,h1 em,h2 em{color:#b9a0ff}
+.dot{background:#b49aff;box-shadow:0 0 17px #9e80ff8a}
+.navlinks a:hover{color:#b9a0ff}
+.nav-contact{border-color:#5c527a}
+.hero-copy>p{color:#c4c5db}
+.hero{position:relative}
+.hero:before{content:"";position:absolute;pointer-events:none;inset:0;background:radial-gradient(ellipse at 10% 20%,#6744b01c,transparent 42%);z-index:-1}
+.btn{background:linear-gradient(135deg,#b9a0ff,#94e7ff);color:#141026}
+.btn:hover{background:linear-gradient(135deg,#d1c0ff,#b6f2ff)}
+.btn.secondary{border-color:#62597e;color:#f1f5ff}
+.btn.secondary:hover{background:#2a2342}
+.availability{color:#bcb9d2}
+.board{background:radial-gradient(ellipse at 45% 45%,#7454c45c,transparent 65%),repeating-linear-gradient(0deg,transparent 0 31px,#a7dfff0b 32px),repeating-linear-gradient(90deg,transparent 0 31px,#a7dfff0b 32px);border-color:#5c5081;box-shadow:0 25px 80px #6245a322}
+.board-top,.board-bottom,.side-note{color:#c2badb}
+.circuit path{stroke:#8edcff}.circuit circle{fill:#c2a9ff}
+.chip{background:#211a39;border-color:#9b87e2;box-shadow:12px 18px 0 #0d0a1a,0 0 60px #b49aff2a}
+.chip:before,.chip:after{background:repeating-linear-gradient(0deg,#b4e7ff 0 5px,transparent 5px 14px)}
+.chip small{color:#b9a8db}.chip span{color:#a9ecff}
+.board-label{background:#2a2146;border-color:#7765b4;color:#c8b9ff}
+.skill-strip{border-color:#45395f;background:#17112c}.strip-inner{color:#d2d0e8}.strip-inner span:before{color:#9cdbff}
+.section-top .mono{color:#bcb2d9}
+.paper{background:linear-gradient(145deg,#f6f8ff,#e9efff);color:#17142d}
+.paper .section-top .mono{color:#6d6585}.paper .section-heading>p{color:#635d7d}.paper h2 em{color:#7754c5}
+.projects{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.project{border-bottom-color:#c8c3e1}.project-art{aspect-ratio:1.13}
+.air-art{background:#d9e3fa;background-image:radial-gradient(#a8b5db 1px,transparent 1px)}
+.project-art .number{color:#514875}.art-caption{color:#635a86}
+.monitor{background:#fff;border-color:#b4a6db;box-shadow:14px 18px 0 #a08bd342}
+.monitor-top{color:#6a6286}.reading{color:#3c2968}.wave path{stroke:#8865cf}
+.sim-badge{background:#f8f5ffdd;color:#49386f}
+.project-meta{color:#756a92}.project p{color:#5b5774}.tag{border-color:#c7bddd;color:#54476e}
+.proof-note{background:#e4e2f5;border-left-color:#8765c6;color:#514a70}
+.robot-art{background:radial-gradient(circle at 50% 42%,#8e8be7,#332955);display:grid;place-items:center}
+.robot-art .number,.robot-art .art-caption,.pcb-art .number,.pcb-art .art-caption{color:#eeeaff}
+.robot-visual{width:70%;height:60%;position:relative;transform:perspective(550px) rotateX(24deg) rotateZ(-12deg)}
+.robot-body{position:absolute;inset:16% 18%;background:linear-gradient(145deg,#a3e7ff,#6553a5);border:5px solid #d6f6ff;border-radius:17px;box-shadow:0 18px 0 #241d48,0 30px 35px #0b082c88;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#21193e}
+.robot-body span{font:700 48px 'Space Grotesk',sans-serif}.robot-body small{font:9px monospace;letter-spacing:.1em}
+.wheel{position:absolute;width:23%;height:27%;border-radius:16px;background:repeating-linear-gradient(90deg,#151228 0 8px,#34294d 8px 13px);border:3px solid #a7a1c8;box-shadow:0 8px 14px #100b2e88}
+.wheel-a{top:8%;left:0}.wheel-b{top:8%;right:0}.wheel-c{bottom:5%;left:0}.wheel-d{bottom:5%;right:0}
+.pcb-art{background:radial-gradient(circle at 50% 50%,#385c89,#18132f);display:grid;place-items:center}
+.pcb-visual{position:relative;width:70%;height:62%;border:2px solid #a9dfff;border-radius:15px;background:linear-gradient(145deg,#2d3266,#15172f);box-shadow:0 18px 40px #0008,0 0 45px #90cfff36;transform:rotate(-7deg);overflow:hidden}
+.pcb-grid{position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 18px,#b2a6ff50 19px,transparent 20px),repeating-linear-gradient(90deg,transparent 0 25px,#a9edff4a 26px,transparent 27px)}
+.pcb-chip{position:absolute;inset:23% 25%;background:#17132d;border:2px solid #c5b2ff;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#e8dfff;box-shadow:0 0 30px #9b80ff60}
+.pcb-chip small,.pcb-chip span{font:9px monospace}.pcb-chip strong{font:700 clamp(15px,2vw,24px) 'Space Grotesk'}
+.pcb-pulse{position:absolute;top:12%;right:10%;height:9px;width:9px;background:#a9f2ff;border-radius:50%;box-shadow:0 0 20px #a9f2ff}
+.about-copy p{color:#c2bfd9}.about-copy strong{color:#fff}.about-details small{color:#b9a6e3}.about-details p{color:#e7e5fa}
+.experience-row{border-color:#41375f}.experience-row .mono{color:#c0b0df}.experience-row h4{color:#a9ecff}.experience-row p{color:#c0bbd6}
+.tool{border-color:#b9b3d3}.tool p{color:#635d7d}
+.contact{background:linear-gradient(135deg,#9474dc,#a9dfff);color:#17142e}
+.contact .btn{background:#1c1535;color:#fff}.contact .mono{color:#342452}.contact-link{border-bottom-color:#51446c}.contact p{color:#30294e}
+footer{color:#b1a8d0}
+.detail .callout{background:#27203e;border-color:#6c579b}.detail .architecture span{background:#28223e;border-color:#625184}
+@media(max-width:1000px){.projects{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.projects{grid-template-columns:1fr}.navlinks{background:#1b1532;border-color:#554778}.board{transform:rotate(1deg)}.project-art{aspect-ratio:1.4}}
