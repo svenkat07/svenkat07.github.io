@@ -43,9 +43,9 @@ function go(i){sectionIndex=i;sections[i]?.scrollIntoView({behavior:reduce?'auto
 function stop(){active=false;stopped=true;pause.textContent='Resume';status.textContent='Ride paused'}
 function start(){stopped=false;active=true;pause.textContent='Pause';status.textContent='Automatic ride';go(sectionIndex)}
 document.getElementById('start').addEventListener('click',()=>{sectionIndex=0;start()});
-pause.addEventListener('click',()=>{if(active){stop()}else if(!reduce){start()}else{sectionIndex=Math.min(sectionIndex+1,3);go(sectionIndex)}});
+pause.addEventListener('click',()=>{if(active){stop()}else if(!reduce){if(sectionIndex===3){sectionIndex=0;skip.classList.remove('hidden')}start()}else{sectionIndex=Math.min(sectionIndex+1,3);go(sectionIndex)}});
 skip.addEventListener('click',()=>{active=false;stopped=true;sectionIndex=3;document.getElementById('contact').scrollIntoView({behavior:'instant'});fill.style.width='100%';label.textContent='FINISH';pause.textContent='Restart';status.textContent='Ride skipped';skip.classList.add('hidden')});
-let lastScroll=0;addEventListener('scroll',()=>{if(!active)return;const y=scrollY;if(Math.abs(y-lastScroll)>100&&now()<nextAt-1000){stop()}lastScroll=y},{passive:true});
+
 function advance(){if(!active)return;if(now()>=nextAt){if(sectionIndex<3){go(sectionIndex+1)}else{active=false;status.textContent='Ride complete';document.getElementById('contact').scrollIntoView({behavior:'smooth'});fill.style.width='100%';label.textContent='FINISH';pause.textContent='Replay';skip.classList.add('hidden')}}}
 setInterval(advance,200);
 if(autoEnabled){setTimeout(()=>{if(!stopped&&!active&&scrollY<80)start()},1800)}else{pause.textContent='Next';status.textContent='Reduced motion mode: manual navigation'}
